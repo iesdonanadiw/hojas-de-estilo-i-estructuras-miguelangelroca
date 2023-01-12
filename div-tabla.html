@@ -5,7 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Div como tabla</title>
-    <meta charset="utf-8" />
+    <style>
+      #contenedor {
+        display: table;
+        border: solid 1px;
+        border-collapse: collapse;
+      }
+      .contenidos {
+        display: table-row;
+        border: solid 1px;
+        border-collapse: collapse;
+      }
+      .secundario,
+      .principal,
+      .lateral {
+        display: table-cell;
+        border: solid 1px;
+        border-collapse: collapse;
+      }
+      
+    </style>
   </head>
   <body>
     <div id="contenedor">
@@ -18,12 +37,12 @@
         <div class="secundario">Curabitur rutrum...</div>
         <div class="principal">Lorem ipsum dolor sit amet...</div>
         <div class="lateral">Nam erat massa...</div>
-      </div>   
+      </div>
       <div class="contenidos">
         <div class="secundario">Curabitur rutrum...</div>
         <div class="principal">Lorem ipsum dolor sit amet...</div>
         <div class="lateral">Nam erat massa...</div>
-      </div>          
+      </div>
     </div>
   </body>
 </html>
